@@ -68,11 +68,11 @@ class Conta {
 }
 
 const c1 = new Conta(123, 456, p1);
-c1.mostrarSaldo();
-c1.depositar(100);
-c1.mostrarSaldo();
-c1.depositar(-200);
-c1.mostrarSaldo();
-c1.sacar(500);
-c1.mostrarSaldo();
-console.log(c1.cliente);
+// c1.mostrarSaldo();
+// c1.depositar(100);
+// c1.mostrarSaldo();
+// c1.depositar(-200);
+// c1.mostrarSaldo();
+// c1.sacar(500);
+// c1.mostrarSaldo();
+// console.log(c1.cliente);
