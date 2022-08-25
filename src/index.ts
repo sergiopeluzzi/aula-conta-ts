@@ -1,4 +1,6 @@
 import { Conta } from "./classes/Conta";
+import { ContaCorrente } from "./classes/ContaCorrente";
+import { ContaPoupanca } from "./classes/ContaPoupanca";
 import { Pessoa } from "./classes/Pessoa";
 
 // instanciando os objetos
@@ -18,18 +20,26 @@ const p3 = new Pessoa("Kleber", 89, "000.000.000-00", "M");
 // p3.fazerAniversario();
 // console.log(`${p3.nome} agora tem ${p3.idade} anos`);
 
-const c1 = new Conta(123, 456, p1);
-c1.mostrarSaldo();
-c1.depositar(100);
-c1.mostrarSaldo();
-c1.depositar(-200);
-c1.mostrarSaldo();
-c1.sacar(500);
-c1.mostrarSaldo();
-console.log(c1.cliente);
+const c1 = new Conta(123, 456, p1, "Corrente");
+// c1.mostrarSaldo();
+// c1.depositar(100);
+// c1.mostrarSaldo();
+// c1.depositar(-200);
+// c1.mostrarSaldo();
+// c1.sacar(500);
+// c1.mostrarSaldo();
+//console.log(c1.cliente);
 
-const c2 = new Conta(123, 123, p2);
+const c2 = new Conta(123, 123, p2, "Poupança");
 
 c1.transferir(40, c2);
-c1.mostrarSaldo();
-c2.mostrarSaldo();
+//c1.mostrarSaldo();
+//c2.mostrarSaldo();
+
+//const c3 = new Conta(123, 333, p3, "Poupança");
+
+const cc1 = new ContaCorrente(123, 7777, p1);
+const cp1 = new ContaPoupanca(123, 9999, p2, 80);
+
+console.log(cc1);
+console.log(cp1);

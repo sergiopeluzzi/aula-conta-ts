@@ -2,11 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Conta = void 0;
 var Conta = /** @class */ (function () {
-    function Conta(agencia, numero, cliente) {
+    function Conta(agencia, numero, cliente, tipo) {
         this.saldo = 0;
         this.agencia = agencia;
         this.numero = numero;
         this.cliente = cliente;
+        this.tipo = tipo;
     }
     Conta.prototype.depositar = function (valor) {
         if (valor > 0) {
