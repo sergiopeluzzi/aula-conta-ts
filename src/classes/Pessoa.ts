@@ -1,22 +1,28 @@
 // classe pessoa
+
+type TipoPessoa = "Fisica" | "Juridica";
 export class Pessoa {
     // atributos da classe pessoa
     nome: string;
-    idade: number;
-    cpf: string;
-    sexo: string;
+    endereco: string;
+    telefone: string;
+    tipo: TipoPessoa;
 
     // metodo construtor
-    constructor(nome: string, idade: number, cpf: string, sexo: string) {
+    constructor(
+        nome: string,
+        endereco: string,
+        telefone: string,
+        tipo: TipoPessoa
+    ) {
         // this referencia o objeto em questao
         this.nome = nome;
-        this.idade = idade;
-        this.cpf = cpf;
-        this.sexo = sexo;
+        this.endereco = endereco;
+        this.telefone = telefone;
+        this.tipo = tipo;
     }
 
-    fazerAniversario() {
-        this.idade = this.idade + 1;
-        console.log(this.nome + " fez aniversário!");
+    saudacao() {
+        console.log(`Olá eu sou ${this.nome}`);
     }
 }

@@ -1,12 +1,33 @@
-import { Conta } from "./classes/Conta";
 import { ContaCorrente } from "./classes/ContaCorrente";
 import { ContaPoupanca } from "./classes/ContaPoupanca";
-import { Pessoa } from "./classes/Pessoa";
+import { PessoaFisica } from "./classes/PessoaFisica";
+import { PessoaJuridica } from "./classes/PessoaJuridica";
 
 // instanciando os objetos
-const p1 = new Pessoa("Sergio", 36, "000.000.000-00", "M");
-const p2 = new Pessoa("Joao", 19, "000.000.000-00", "M");
-const p3 = new Pessoa("Kleber", 89, "000.000.000-00", "M");
+const p1 = new PessoaFisica(
+    "Sergio",
+    "Av Cuiaba, 2640",
+    "(69) 9 9328-4013",
+    "M",
+    "111.111.111-11",
+    "25/11/1985"
+);
+const p2 = new PessoaFisica(
+    "Henrique",
+    "Rua dos Pioneiros, 1575",
+    "(69) 9 9268-1850",
+    "M",
+    "222.222.222-22",
+    "08/05/1991"
+);
+
+const p3 = new PessoaJuridica(
+    "Scalare Mkt Digital",
+    "Av Dois de Junho, 2651",
+    "(69) 3441-5113",
+    "11.111.222/0001-60",
+    "19/08/2018"
+);
 
 // console.log(`${p1.nome} tem ${p1.idade} anos`);
 // p1.fazerAniversario();
@@ -20,7 +41,7 @@ const p3 = new Pessoa("Kleber", 89, "000.000.000-00", "M");
 // p3.fazerAniversario();
 // console.log(`${p3.nome} agora tem ${p3.idade} anos`);
 
-const c1 = new Conta(123, 456, p1, "Corrente");
+//const c1 = new Conta(123, 456, p1, "Corrente");
 // c1.mostrarSaldo();
 // c1.depositar(100);
 // c1.mostrarSaldo();
@@ -30,9 +51,9 @@ const c1 = new Conta(123, 456, p1, "Corrente");
 // c1.mostrarSaldo();
 //console.log(c1.cliente);
 
-const c2 = new Conta(123, 123, p2, "Poupança");
+//const c2 = new Conta(123, 123, p2, "Poupança");
 
-c1.transferir(40, c2);
+//c1.transferir(40, c2);
 //c1.mostrarSaldo();
 //c2.mostrarSaldo();
 

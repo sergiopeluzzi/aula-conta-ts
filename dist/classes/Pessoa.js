@@ -1,19 +1,18 @@
 "use strict";
+// classe pessoa
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Pessoa = void 0;
-// classe pessoa
 var Pessoa = /** @class */ (function () {
     // metodo construtor
-    function Pessoa(nome, idade, cpf, sexo) {
+    function Pessoa(nome, endereco, telefone, tipo) {
         // this referencia o objeto em questao
         this.nome = nome;
-        this.idade = idade;
-        this.cpf = cpf;
-        this.sexo = sexo;
+        this.endereco = endereco;
+        this.telefone = telefone;
+        this.tipo = tipo;
     }
-    Pessoa.prototype.fazerAniversario = function () {
-        this.idade = this.idade + 1;
-        console.log(this.nome + " fez aniversário!");
+    Pessoa.prototype.saudacao = function () {
+        console.log("Ol\u00E1 eu sou ".concat(this.nome));
     };
     return Pessoa;
 }());
