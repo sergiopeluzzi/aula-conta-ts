@@ -23,6 +23,6 @@ export class Pessoa {
     }
 
     saudacao() {
-        console.log(`Olá eu sou ${this.nome}`);
+        console.log(`Olá eu sou ${this.nome} do tipo ${this.tipo}`);
     }
 }

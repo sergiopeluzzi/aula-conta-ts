@@ -12,7 +12,7 @@ var Pessoa = /** @class */ (function () {
         this.tipo = tipo;
     }
     Pessoa.prototype.saudacao = function () {
-        console.log("Ol\u00E1 eu sou ".concat(this.nome));
+        console.log("Ol\u00E1 eu sou ".concat(this.nome, " do tipo ").concat(this.tipo));
     };
     return Pessoa;
 }());
