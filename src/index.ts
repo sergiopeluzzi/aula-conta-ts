@@ -1,3 +1,4 @@
+import { Banco } from "./classes/Banco";
 import { ContaCorrente } from "./classes/ContaCorrente";
 import { ContaPoupanca } from "./classes/ContaPoupanca";
 import { PessoaFisica } from "./classes/PessoaFisica";
@@ -66,8 +67,22 @@ const cp1 = new ContaPoupanca(123, 9999, p2, 80);
 //cc1.agencia = 2000;
 //cc1.saldo = 9000;
 
-console.log(cc1.obterCliente())
-cc1.atribuirCliente(p2)
-console.log(cc1.obterCliente())
+// console.log(cc1.obterCliente())
+// cc1.atribuirCliente(p2)
+// console.log(cc1.obterCliente())
 
 //console.log(cc1)
+
+const b1 = new Banco("Xubank", "2020-10-11")
+console.log(b1.nome)
+
+b1.nome = "CaracaBank"
+console.log(b1.nome);
+
+console.log(b1.url);
+b1.url = '';
+console.log(b1.url)
+b1.url = 'https://www.google.com'
+console.log(b1.url);
+
+

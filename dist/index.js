@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+var Banco_1 = require("./classes/Banco");
 var ContaCorrente_1 = require("./classes/ContaCorrente");
 var ContaPoupanca_1 = require("./classes/ContaPoupanca");
 var PessoaFisica_1 = require("./classes/PessoaFisica");
@@ -36,7 +37,16 @@ var cp1 = new ContaPoupanca_1.ContaPoupanca(123, 9999, p2, 80);
 //console.log(cc1);
 //cc1.agencia = 2000;
 //cc1.saldo = 9000;
-console.log(cc1.obterCliente());
-cc1.atribuirCliente(p2);
-console.log(cc1.obterCliente());
+// console.log(cc1.obterCliente())
+// cc1.atribuirCliente(p2)
+// console.log(cc1.obterCliente())
 //console.log(cc1)
+var b1 = new Banco_1.Banco("Xubank", "2020-10-11");
+console.log(b1.nome);
+b1.nome = "CaracaBank";
+console.log(b1.nome);
+console.log(b1.url);
+b1.url = '';
+console.log(b1.url);
+b1.url = 'https://www.google.com';
+console.log(b1.url);
