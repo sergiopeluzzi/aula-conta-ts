@@ -62,5 +62,12 @@ const p3 = new PessoaJuridica(
 const cc1 = new ContaCorrente(123, 7777, p1);
 const cp1 = new ContaPoupanca(123, 9999, p2, 80);
 
-console.log(cc1);
-console.log(cp1);
+//console.log(cc1);
+//cc1.agencia = 2000;
+//cc1.saldo = 9000;
+
+console.log(cc1.obterCliente())
+cc1.atribuirCliente(p2)
+console.log(cc1.obterCliente())
+
+//console.log(cc1)

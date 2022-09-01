@@ -8,7 +8,7 @@ export class ContaPoupanca extends Conta {
         cliente: Pessoa,
         valor: number
     ) {
-        super(agencia, numero, cliente, "Poupança");
+        super(agencia, numero, cliente);
         this.depositar(valor);
     }
 

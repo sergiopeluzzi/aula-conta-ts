@@ -33,5 +33,10 @@ var p3 = new PessoaJuridica_1.PessoaJuridica("Scalare Mkt Digital", "Av Dois de 
 //const c3 = new Conta(123, 333, p3, "Poupança");
 var cc1 = new ContaCorrente_1.ContaCorrente(123, 7777, p1);
 var cp1 = new ContaPoupanca_1.ContaPoupanca(123, 9999, p2, 80);
-console.log(cc1);
-console.log(cp1);
+//console.log(cc1);
+//cc1.agencia = 2000;
+//cc1.saldo = 9000;
+console.log(cc1.obterCliente());
+cc1.atribuirCliente(p2);
+console.log(cc1.obterCliente());
+//console.log(cc1)

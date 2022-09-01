@@ -2,22 +2,43 @@ import { Pessoa } from "./Pessoa";
 
 export type TipoConta = "Corrente" | "Poupança";
 export class Conta {
-    agencia: number;
-    numero: number;
-    cliente: Pessoa;
-    saldo: number = 0;
-    tipo: TipoConta;
+    private agencia: number;
+    private numero: number;
+    private cliente: Pessoa;
+    protected saldo: number = 0;
 
     constructor(
         agencia: number,
         numero: number,
-        cliente: Pessoa,
-        tipo: TipoConta
+        cliente: Pessoa
     ) {
         this.agencia = agencia;
         this.numero = numero;
         this.cliente = cliente;
-        this.tipo = tipo;
+    }
+
+    obterCliente(): Pessoa {
+        return this.cliente;
+    }
+
+    atribuirCliente(cliente: Pessoa): void {
+        this.cliente = cliente;
+    }
+
+    obterAgencia(): number {
+        return this.agencia;
+    }
+
+    atribuirAgencia(ag: number): void {
+        this.agencia = ag
+    }
+
+    obterNumero(): number {
+        return this.numero
+    }
+
+    atribuirNumero(num: number): void {
+        this.numero = num
     }
 
     depositar(valor: number): void {
@@ -41,3 +62,5 @@ export class Conta {
         conta.depositar(valor);
     }
 }
+
+

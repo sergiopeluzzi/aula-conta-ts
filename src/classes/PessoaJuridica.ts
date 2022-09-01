@@ -1,8 +1,8 @@
 import { Pessoa } from "./Pessoa";
 
 export class PessoaJuridica extends Pessoa {
-    cnpj: string;
-    dataAbertura: string;
+    private cnpj: string;
+    private dataAbertura: string;
 
     constructor(
         nome: string,
@@ -11,8 +11,24 @@ export class PessoaJuridica extends Pessoa {
         cnpj: string,
         dataAbertura: string
     ) {
-        super(nome, endereco, telefone, "Juridica");
+        super(nome, endereco, telefone);
         this.cnpj = cnpj;
         this.dataAbertura = dataAbertura;
+    }
+
+    obterCnpj(): string {
+        return this.cnpj;
+    }
+
+    atribuirCnpj(cnpj: string) {
+        this.cnpj = cnpj;
+    }
+
+    obterDataAbertura(): string {
+        return this.dataAbertura;
+    }
+
+    atribuirDataAbertura(dataAbertura: string) {
+        this.dataAbertura = dataAbertura
     }
 }
