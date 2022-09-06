@@ -82,7 +82,5 @@ console.log(b1.nome);
 console.log(b1.url);
 b1.url = '';
 console.log(b1.url)
-b1.url = 'https://www.google.com'
+b1.url = 'https://www.google.com.br'
 console.log(b1.url);
-
-
