@@ -10,5 +10,11 @@
     },
     "keywords": [],
     "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    "dependencies": {
+        "moment": "^2.29.4"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.19"
+    }
 }
